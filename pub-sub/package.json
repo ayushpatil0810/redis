@@ -1,0 +1,22 @@
+{
+  "name": "pub-sub",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "api": "bun src/api.ts",
+    "subscriber": "bun src/subscriber.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.6",
+    "@types/ioredis": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "ioredis": "^5.11.0"
+  }
+}
